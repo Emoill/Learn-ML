@@ -2,7 +2,9 @@
 
 ## Install
 pip install gym
+
 pip install stable-baselines3
+
 pip install pyglet==1.5.27
 
 ## Task
