@@ -11,8 +11,7 @@ env = gym.make(env_name)
 env = DummyVecEnv([lambda: env])
 model = PPO('MlpPolicy', env, verbose=1)
 
-a,b,c = model.learn(total_timesteps=100)
-print(a)
+model.learn(total_timesteps=50000)
 
 ppo_path = os.path.join('Cartpole_model')
 model.save(ppo_path)
